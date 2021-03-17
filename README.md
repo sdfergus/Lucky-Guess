@@ -1,2 +1,2 @@
 # Lucky-Guess
-Side project desktop game
+Side project refresher: Desktop guessing game
