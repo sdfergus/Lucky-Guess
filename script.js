@@ -33,6 +33,7 @@ document.querySelector('.check').addEventListener('click', function () {
       document.querySelector('.number').style.width = '30rem';
       if (score > highScore) {
         highScore = score;
+        document.querySelector('.highscore').textContent = highScore;
       }
       console.log(`HighScore: ${highScore}`);
       //When the guess is too low
@@ -63,7 +64,6 @@ document.querySelector('.again').addEventListener('click', function () {
   score = 20;
   secretNum = Math.floor(Math.random() * 23) + 1;
   console.log(secretNum);
-  document.querySelector('.highscore').textContent = highScore;
   document.querySelector('.number').textContent = '?';
   document.querySelector('.message').textContent = 'Start guessing...';
   document.querySelector('.score').textContent = score;
