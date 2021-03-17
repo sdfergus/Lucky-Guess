@@ -26,6 +26,10 @@ document.querySelector('.check').addEventListener('click', function () {
       score++;
       document.querySelector('.score').textContent = score;
 
+      document.querySelector('body').style.backgroundColor = '#60b347';
+
+      //   document.querySelector('.number').style.width = '';
+
       //When the guess is too low
     } else if (guess < secretNum) {
       document.querySelector('.message').textContent = '📉 Too low!';
